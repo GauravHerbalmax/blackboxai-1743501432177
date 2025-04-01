@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - BusinessSolutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .feature-tab.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-12 px-4">
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Powerful Features</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Everything you need to streamline operations and drive business growth
+            </p>
+        </section>
+
+        <!-- Feature Tabs -->
+        <section class="max-w-6xl mx-auto mb-16">
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button onclick="showTab('all')" class="feature-tab active px-6 py-2 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition">All Features</button>
+                <button onclick="showTab('analytics')" class="feature-tab px-6 py-2 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition">Analytics</button>
+                <button onclick="showTab('automation')" class="feature-tab px-6 py-2 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition">Automation</button>
+                <button onclick="showTab('collaboration')" class="feature-tab px-6 py-2 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition">Collaboration</button>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card analytics bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-chart-pie text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Performance Dashboard</h3>
+                    <p class="text-gray-600 mb-4">Real-time visualization of key business metrics with customizable widgets.</p>
+                    <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Analytics</span>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card automation bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-robot text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Workflow Automation</h3>
+                    <p class="text-gray-600 mb-4">Automate repetitive tasks with our drag-and-drop workflow builder.</p>
+                    <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Automation</span>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card collaboration bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Team Workspaces</h3>
+                    <p class="text-gray-600 mb-4">Secure shared spaces for team collaboration with granular permissions.</p>
+                    <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Collaboration</span>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card analytics bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-bell text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Alerts</h3>
+                    <p class="text-gray-600 mb-4">Get notified about important changes and anomalies in your data.</p>
+                    <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Analytics</span>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card automation bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-envelope text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email Campaigns</h3>
+                    <p class="text-gray-600 mb-4">Create, schedule, and track email marketing campaigns.</p>
+                    <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Automation</span>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card collaboration bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-comments text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Live Chat</h3>
+                    <p class="text-gray-600 mb-4">Integrated chat system for real-time team communication.</p>
+                    <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Collaboration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison -->
+        <section class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Feature Comparison</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="text-left py-4 px-6">Feature</th>
+                            <th class="text-center py-4 px-6">Free</th>
+                            <th class="text-center py-4 px-6">Pro</th>
+                            <th class="text-center py-4 px-6">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6">Performance Dashboard</td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6">Workflow Automation</td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6">Team Workspaces</td>
+                            <td class="text-center py-4 px-6">3 max</td>
+                            <td class="text-center py-4 px-6">10 max</td>
+                            <td class="text-center py-4 px-6">Unlimited</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6">Smart Alerts</td>
+                            <td class="text-center py-4 px-6">Basic</td>
+                            <td class="text-center py-4 px-6">Advanced</td>
+                            <td class="text-center py-4 px-6">Custom</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">API Access</td>
+                            <td class="text-center py-4 px-6"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="text-center py-4 px-6">Read-only</td>
+                            <td class="text-center py-4 px-6">Full access</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script>
+        // Load header and footer
+        fetch('shared/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('shared/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        // Feature tab functionality
+        function showTab(category) {
+            // Update active tab
+            document.querySelectorAll('.feature-tab').forEach(tab => {
+                tab.classList.remove('active', 'bg-blue-500', 'text-white');
+                tab.classList.add('border', 'border-blue-500', 'text-blue-500');
+            });
+            event.target.classList.add('active', 'bg-blue-500', 'text-white');
+            event.target.classList.remove('border', 'border-blue-500', 'text-blue-500');
+
+            // Show/hide features
+            if (category === 'all') {
+                document.querySelectorAll('.feature-card').forEach(card => {
+                    card.style.display = 'block';
+                });
+            } else {
+                document.querySelectorAll('.feature-card').forEach(card => {
+                    card.style.display = 'none';
+                });
+                document.querySelectorAll(`.feature-card.${category}`).forEach(card => {
+                    card.style.display = 'block';
+                });
+            }
+        }
+    </script>
+</body>
+</html>
